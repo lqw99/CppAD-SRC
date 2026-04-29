@@ -3,7 +3,7 @@ mkdir build
 cd build
 cmake ^
     -G "NMake Makefiles"^
-    -D cppad_cxx_flags="/MP /EHs /EHc /std:c++17 /Zc:__cplusplus"^
+    -D cppad_cxx_flags="/MP /MDd /EHs /EHc /std:c++17 /Zc:__cplusplus"^
     -D cppad_static_lib=TRUE^
     ..
-nmake check
+nmake install

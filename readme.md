@@ -1,21 +1,11 @@
-# CppAD: A Package for Differentiation of C++ Algorithms
+# CppAD Windows Build Guide
 
-## Documentation
-[users guide](https://cppad.readthedocs.io/latest/user_guide.html)
-
-## License
-SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
-
-## Install
-
-- The preferred method to test and
-  [install](https://cppad.readthedocs.io/latest/Install.html)
-  CppAD uses [cmake](https://cmake.org).
-
-- A deprecated
-  [autotools](https://cppad.readthedocs.io/latest/cmake.html#autotools)
-  procedure can be used for this purpose, but it will eventually be removed.
-
-## Getting Started
-  [get_started](https://cppad.readthedocs.io/latest/get_started.cpp.html)
-  demonstrates using CppAD by computing the derivative of a simple example function.
+- remove PkgConfig dependency when checking Eigen
+- add `/MDd` option in cxx_flag in bin/build.bat (the default value in a new cmake/vs project)
+- change `check` to `install`
+- in x64 Native Tools Command Prompt for VS, cd into this directory and run
+  ```
+  cmd /c bin/build.bat
+  ```
+- just copy the installed folder to your project folder and add include/library as usual
+- make sure that Eigen is in your project's include directory

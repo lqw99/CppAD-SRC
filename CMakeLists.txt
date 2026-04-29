@@ -81,7 +81,7 @@ INCLUDE(cmake/set_compile_flags.cmake)
 INCLUDE(cmake/pkgconfig_info.cmake)
 #
 # eigen_info()
-INCLUDE(cmake/eigen_info.cmake)
+# INCLUDE(cmake/eigen_info.cmake)
 #
 # add_check_executable(parent_target short_name)
 INCLUDE(cmake/add_check_executable.cmake)
@@ -354,7 +354,8 @@ SET(CMAKE_INSTALL_PREFIX "${cppad_prefix}"
 SET(system_include TRUE)
 #
 # package = eigen
-eigen_info()
+# eigen_info()
+SET(cppad_has_eigen 1)
 #
 # package = adolc
 pkgconfig_info(adolc ${system_include})
