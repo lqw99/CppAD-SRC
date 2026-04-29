@@ -5,7 +5,7 @@
 - change `check` to `install`
 - in x64 Native Tools Command Prompt for VS, cd into this directory and run
   ```
-  cmd /c bin/build.bat
+  cmd /c bin\build.bat
   ```
 - just copy the installed folder to your project folder and add include/library as usual
 - make sure that Eigen is in your project's include directory
